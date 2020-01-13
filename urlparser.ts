@@ -10,7 +10,7 @@ export interface IUri {
     request: string,
     valid: boolean
 }
-// 
+
 export const REGEX_URI = /(https?|s?ftp):\/?\/?([^\/ ]+)\.([a-zA-Z]+):?([0-9]*)?\/?([a-zA-Z0-9/_-~.]*)\??([a-zA-Z0-9-._~:\/\?\[\]@!$&'()\*\+,;=]*)#?([\[\]a-zA-Z0-9-._~:\/\?#\[\]@!$&'()\*\+,;=]*)/gi
 export const REGEX_AUTH_URI = /(https?|s?ftp):\/?\/?([a-zA-Z:]*)?@?([^\/ ]+)\.([a-zA-Z]+):?([0-9]*)?\/?([a-zA-Z0-9/_\-~.]*)\??([\[\]a-zA-Z0-9-._~:\/\?\[\]@!$&'()\*\+,;=]*)#?([a-zA-Z0-9-._~:\/\?#\[\]@!$&'()\*\+,;=]*)/gi
 

@@ -1,6 +1,5 @@
 "use strict";
 exports.__esModule = true;
-// 
 exports.REGEX_URI = /(https?|s?ftp):\/?\/?([^\/ ]+)\.([a-zA-Z]+):?([0-9]*)?\/?([a-zA-Z0-9/_-~.]*)\??([a-zA-Z0-9-._~:\/\?\[\]@!$&'()\*\+,;=]*)#?([\[\]a-zA-Z0-9-._~:\/\?#\[\]@!$&'()\*\+,;=]*)/gi;
 exports.REGEX_AUTH_URI = /(https?|s?ftp):\/?\/?([a-zA-Z:]*)?@?([^\/ ]+)\.([a-zA-Z]+):?([0-9]*)?\/?([a-zA-Z0-9/_\-~.]*)\??([\[\]a-zA-Z0-9-._~:\/\?\[\]@!$&'()\*\+,;=]*)#?([a-zA-Z0-9-._~:\/\?#\[\]@!$&'()\*\+,;=]*)/gi;
 exports.parseUri = function (url) {
