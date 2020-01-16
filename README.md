@@ -1,4 +1,5 @@
 # urlparser
+[![dependencies Status](https://david-dm.org/dwyl/esta/status.svg)](https://david-dm.org/dwyl/esta) [![npm version](https://badge.fury.io/js/urlparser-simple.svg)](https://badge.fury.io/js/urlparser-simple)
 Parses HTTP(S) and (S)FTP URLs. Not sure why I bothered crafting my own REGEX to try and handle nearly all URL conditions but I did.
 
 ## Usage
