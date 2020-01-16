@@ -36,19 +36,20 @@ describe('url parser', () => {
         })
     })
     it('should return all the parts of a URL', () => {
-        const url = 'https://user:password@www.google.com:443/test/url?q[]=blah+blah2&r=@blah2&s=_-test~#hash.tag'
+        const url = 'https://user:password@www.google.com:443/test/url?q[]=blah+blah2&r=@blah2&s=_-test~#hash.tag◄'
         const expected = {
             authority: 'user:password',
-            fragment: 'hash.tag',
+            fragment: 'hash.tag◄',
             host: 'www.google.com',
             path: 'test/url',
             port: 443,
             query: 'q[]=blah+blah2&r=@blah2&s=_-test~',
-            request: 'https://user:password@www.google.com:443/test/url?q[]=blah+blah2&r=@blah2&s=_-test~#hash.tag',
+            request: 'https://user:password@www.google.com:443/test/url?q[]=blah+blah2&r=@blah2&s=_-test~#hash.tag◄',
             scheme: 'https',
             tld: 'com',
             valid: true,
         }
         assert.deepEqual(parseUri(url), expected)
+        assert.notDeepEqual(parseUri(url, true), expected)
     })
 })
