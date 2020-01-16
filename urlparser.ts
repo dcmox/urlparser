@@ -72,3 +72,5 @@ export const parseUri = (url: string = '', strict: boolean = false): IUri => {
         return uri
     }
 }
+
+export default parseUri

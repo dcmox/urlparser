@@ -23,5 +23,7 @@ Returns:
 }
 ```
 
+parseUri() accepts a second parameter "strict" (boolean) which enforces the standard ASCII character set for URLs if set to true.
+
 ## Bugs
 Feel free to report bugs :)
